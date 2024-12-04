@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BaiKiemTra_Nghiep/static/css/main.3b75d374.css",
+    "main.js": "/BaiKiemTra_Nghiep/static/js/main.ba456ea0.js",
+    "index.html": "/BaiKiemTra_Nghiep/index.html",
+    "main.3b75d374.css.map": "/BaiKiemTra_Nghiep/static/css/main.3b75d374.css.map",
+    "main.ba456ea0.js.map": "/BaiKiemTra_Nghiep/static/js/main.ba456ea0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b75d374.css",
+    "static/js/main.ba456ea0.js"
+  ]
+}
