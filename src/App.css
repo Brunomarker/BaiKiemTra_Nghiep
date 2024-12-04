@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Light background */
+  margin: 0;
+  padding: 0;
+  color: #cab5b5;
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/044/073/967/large/mmxx_3d-xmas-room-final-comped.jpg?1639013257"); /* Snow background */
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: backgroundGlow 5s ease-in-out infinite;
+}
+
+/* Header Styles */
+.header {
+  background-color: #b22222; /* Christmas red */
+  padding: 15px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  border-bottom: 5px solid #ff4500; /* Bright orange border */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header nav {
+  margin-top: 8px;
+}
+
+.header nav a {
+  margin: 0 15px;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: #ffeb3b;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #b22222;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Game Card Styles */
+.game-card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  height: 350px; /* Adjust height for price and discount info */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.game-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-card h3 {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  color: #b22222;
+}
+
+.game-card button {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.game-card button:hover {
+  background-color: #ff6347;
+}
+
+/* Game List Container Styles */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Automatically fills grid with minimum size */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Snowflake and Christmas Lights Effects */
+.snowflake {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+  pointer-events: none;
+  user-select: none;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.christmas-lights {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: blink 1s infinite ease-in-out;
+}
+
+.christmas-lights div {
+  position: absolute;
+  background-color: #ff0000;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: blink 1s infinite ease-in-out;
+}
+
+/* Animations for Buttons */
+button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Scale up button slightly on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .game-list {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
+
+  .game-card {
+    width: 90%;
+    height: auto; /* Flexible height on small screens */
+  }
+
+  .home-page-container {
+    max-width: 90%;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+  }
+}
+
+/* Christmas-themed background glow effect */
+@keyframes backgroundGlow {
+  0% {
+    background-color: rgba(190, 85, 85, 0.1);
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.2); /* Red glow */
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Style for Discount Price */
+.game-price {
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  font-size: 1.4rem;
+  color: #ff6347; /* Highlight discounted price */
+  font-weight: bold;
+}
+
+/* Sale Banner */
+.sale-banner {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #00ff4c; /* Sale banner color */
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}

@@ -1,0 +1,88 @@
+/* GameList.css (Thêm phần modal) */
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Màu nền mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Nút "Add to Wishlist" */
+.add-to-wishlist-btn {
+  background-color: #ff5722; /* Màu đỏ Giáng Sinh */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-wishlist-btn:hover {
+  background-color: #d43d15;
+}
+
+/* Nút "Add to Cart" */
+.add-to-cart-btn {
+  background-color: #4caf50; /* Màu xanh lá cây */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Nút Close Modal */
+.close-modal-btn {
+  background-color: #888;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.close-modal-btn:hover {
+  background-color: #555;
+}

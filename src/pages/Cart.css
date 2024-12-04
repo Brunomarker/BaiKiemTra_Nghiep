@@ -1,0 +1,152 @@
+/* Cart.css */
+
+/* Tổng thể trang giỏ hàng */
+.cart-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Màu nền nhẹ nhàng */
+  padding: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/02/18/01/white-2903386_960_720.jpg"); /* Background Giáng Sinh */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+/* Header Giỏ hàng */
+.cart-container h1 {
+  font-size: 2.5rem;
+  color: #f44336; /* Màu đỏ Giáng Sinh */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hiển thị danh sách sản phẩm trong giỏ */
+.cart-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container li img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container li div {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.cart-container .game-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.cart-container .game-price {
+  font-size: 1.1rem;
+  color: #4caf50;
+}
+
+/* Nút thanh toán */
+.pay-now-btn {
+  background-color: #ff5722; /* Màu cam đậm Giáng Sinh */
+  color: white;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.pay-now-btn:hover {
+  background-color: #e64a19;
+}
+
+.pay-now-btn:active {
+  background-color: #d84315;
+}
+
+/* Thông báo thanh toán thành công */
+.payment-success {
+  background-color: #dff0d8; /* Màu xanh lá cây nhạt */
+  padding: 40px;
+  margin-top: 30px;
+  border: 2px solid #d0e9c6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-success h2 {
+  color: #3c763d;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.payment-success p {
+  font-size: 1.2rem;
+  color: #388e3c;
+  margin-bottom: 20px;
+}
+
+.payment-success button {
+  background-color: #4caf50; /* Màu xanh lá cây */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-success button:hover {
+  background-color: #388e3c;
+}
+
+.payment-success button:active {
+  background-color: #2c6c29;
+}
+
+/* Giỏ hàng trống */
+.cart-container p {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+/* Hiệu ứng ánh sáng cho các phần tử */
+.cart-container li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-container h1:hover {
+  color: #e91e63; /* Đổi màu khi hover */
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
